@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/constrintColor">
+
+
+        <TextClock
+            android:id="@+id/textClock"
+            android:layout_width="185dp"
+            android:layout_height="47dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="56dp"
+            android:drawablePadding="@dimen/_5sdp"
+            android:enabled="false"
+            android:focusable="false"
+            android:format12Hour="dd MMM yyyy hh:mm a"
+            android:format24Hour="dd MMM yyyy HH:mm"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonapps"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="MissingConstraints,UnknownId" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/imageworldtv"
+            android:layout_width="@dimen/_151sdp"
+            android:layout_height="@dimen/_51sdp"
+            android:layout_marginStart="36dp"
+            android:background="@drawable/selector_button"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_1sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/worldtv_img_orange_hor"
+            app:layout_constraintBottom_toBottomOf="@+id/imagenetflix"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imagenetflix"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/buttonyoutube"
+            android:layout_width="@dimen/_151sdp"
+            android:layout_height="@dimen/_51sdp"
+            android:layout_marginStart="36dp"
+            android:background="@drawable/selector_button"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_1sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/youtube_img_focus_orange"
+            app:layout_constraintBottom_toBottomOf="@+id/buttoncineflix"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/buttoncineflix"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/buttoncineflix"
+            android:layout_width="@dimen/_151sdp"
+            android:layout_height="@dimen/_51sdp"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/selector_button"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_1sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cineflix_img_focus_orange"
+            app:layout_constraintBottom_toBottomOf="@+id/buttonred"
+            app:layout_constraintStart_toEndOf="@+id/buttonyoutube"
+            app:layout_constraintTop_toTopOf="@+id/buttonred"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/imagenetflix"
+            android:layout_width="@dimen/_151sdp"
+            android:layout_height="@dimen/_51sdp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="56dp"
+            android:background="@drawable/selector_button"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_1sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/netflix_img_focus_orange"
+            app:layout_constraintStart_toEndOf="@+id/imageworldtv"
+            app:layout_constraintTop_toBottomOf="@+id/buttoncineflix" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/buttonapps"
+            android:layout_width="@dimen/_151sdp"
+            android:layout_height="@dimen/_51sdp"
+            android:layout_marginTop="56dp"
+            android:background="@drawable/selector_button"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_1sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/menu_focus_orange_s905d"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toEndOf="@+id/imagenetflix"
+            app:layout_constraintTop_toBottomOf="@+id/buttonred" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/buttonred"
+            android:layout_width="@dimen/_151sdp"
+            android:layout_height="@dimen/_51sdp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/selector_button"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_1sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/rediptvplus_img_focus_orange"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.119"
+            app:layout_constraintStart_toEndOf="@+id/buttoncineflix"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>
